@@ -55,7 +55,7 @@ const Sidebar = () => {
         console.log(collapsed, type);
       }}
       style={{ backgroundColor: colorBgLayout }}
-      className="p-5 mt-5 ml-5"
+      className="p-5 mt-5 ml-5 fixed top-0 left-0 min-h-screen"
     >
       <section className="flex justify-center items-center gap-4">
         <AppstoreOutlined className="text-3xl" />

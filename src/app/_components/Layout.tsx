@@ -20,13 +20,11 @@ export default function MainLayout({
     <AntdRegistry>
       <StyleProvider layer>
         <ConfigProvider theme={theme}>
-          <Layout hasSider className="min-h-screen">
+          <Layout hasSider className="min-h-screen overflow-auto relative">
             <Sidebar />
-            <Layout className="mt-5 pt-5">
+            <Layout className="mt-5 pt-5 ml-[210px]">
               <Navbar />
-              <Content className="min-h-screen p-6 mx-4 my-6">
-                {children}
-              </Content>
+              <Content className="p-6 mx-4 my-6">{children}</Content>
             </Layout>
           </Layout>
         </ConfigProvider>
