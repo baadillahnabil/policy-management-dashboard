@@ -3,12 +3,10 @@
 import { type RefAttributes, type ForwardRefExoticComponent } from "react";
 import { useRouter } from "next/navigation";
 import { Menu, Layout, theme, type MenuProps } from "antd";
-import {
-  PieChartOutlined,
-  DatabaseOutlined,
-  AppstoreOutlined,
-} from "@ant-design/icons";
+import { AppstoreOutlined } from "@ant-design/icons";
 import { AntdIconProps } from "@ant-design/icons/lib/components/AntdIcon";
+
+import Routes from "@/app/_utils/routes";
 
 const { Sider } = Layout;
 
@@ -28,16 +26,10 @@ const MenuIconLabel = ({ icon, label }: MenuIconLabel) => {
 };
 
 type MenuItem = Required<MenuProps>["items"][number];
-const items: MenuItem[] = [
-  {
-    key: "overview",
-    ...MenuIconLabel({ icon: PieChartOutlined, label: "Overview" }),
-  },
-  {
-    key: "data",
-    ...MenuIconLabel({ icon: DatabaseOutlined, label: "Data" }),
-  },
-];
+const items: MenuItem[] = Routes.map((route) => ({
+  key: route.key,
+  ...MenuIconLabel(route),
+}));
 
 const Sidebar = () => {
   const router = useRouter();
@@ -53,6 +45,7 @@ const Sidebar = () => {
     <Sider
       trigger={null}
       collapsible
+      collapsedWidth={0}
       breakpoint="md"
       width={210}
       onBreakpoint={(broken) => {
