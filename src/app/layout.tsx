@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import MainLayout from "@/app/_components/Layout";
-import "./globals.css";
+import "@/app/_styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Dynamic Policy",

@@ -10,7 +10,10 @@ const Navbar = () => {
   } = theme.useToken();
 
   return (
-    <Header style={{ background: colorBgLayout }} className="h-10 leading-10">
+    <Header
+      style={{ background: colorBgLayout }}
+      className="h-10 leading-10 font-bold text-lg"
+    >
       The page
     </Header>
   );
