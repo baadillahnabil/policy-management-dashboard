@@ -1,0 +1,1802 @@
+[
+    {
+        "id": 1,
+        "policyTitle": "Choice test Congress discussion",
+        "shortDescription": "Season recognize event grow already watch give training relate minute bill per.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2020-08-28",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 2,
+        "policyTitle": "Direction scientist soon win",
+        "shortDescription": "Prevent course shake manager human carry lead.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2020-08-31",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 3,
+        "policyTitle": "Professional change rich",
+        "shortDescription": "To pick air recognize often dark tell defense hope some carry deep would media speak speech.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2020-08-07",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 4,
+        "policyTitle": "Case outside his open lawyer",
+        "shortDescription": "Surface former ask fear cultural fall Mrs product laugh ability nor how sit wish court face.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2022-07-13",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 5,
+        "policyTitle": "Prepare down once check few",
+        "shortDescription": "Bank second product newspaper indeed near company choose represent.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2022-01-22",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 6,
+        "policyTitle": "Authority action of",
+        "shortDescription": "Base ball term kid know allow indeed serve try join.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2020-10-23",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 7,
+        "policyTitle": "Perform lose people",
+        "shortDescription": "Character base nothing where however newspaper peace question big list dinner charge toward.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2023-06-03",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 8,
+        "policyTitle": "Area worry agency now consumer",
+        "shortDescription": "Traditional amount production able cell home whom weight participant attention.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2022-11-12",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 9,
+        "policyTitle": "Amount relate still",
+        "shortDescription": "Party card its rise drop job exist majority there eye individual that.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2020-12-17",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 10,
+        "policyTitle": "Science challenge",
+        "shortDescription": "Participant nothing matter Republican body college generation usually sign article senior western word.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2024-03-17",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 11,
+        "policyTitle": "Certainly the player",
+        "shortDescription": "Stock forward feel letter herself allow audience here what little friend measure Democrat structure.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2022-02-21",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 12,
+        "policyTitle": "Career focus exactly",
+        "shortDescription": "Memory would war of long rich full control particularly easy live audience check box bad.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2021-04-24",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 13,
+        "policyTitle": "Now beat civil",
+        "shortDescription": "In agent quickly medical red teacher war know all suggest require push check far degree building.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2020-06-14",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 14,
+        "policyTitle": "Think often among do give",
+        "shortDescription": "West cause old week at relationship matter manage story.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2020-08-06",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 15,
+        "policyTitle": "Toward so from area",
+        "shortDescription": "Much camera begin lead class despite not identify million young western option.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2020-04-06",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 16,
+        "policyTitle": "Down write father grow",
+        "shortDescription": "Physical might until town technology center positive option improve pass.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2024-03-28",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 17,
+        "policyTitle": "Want successful on general",
+        "shortDescription": "Use treatment answer deal try administration risk ahead century.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2024-04-01",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 18,
+        "policyTitle": "Think meeting ago",
+        "shortDescription": "Officer seem enjoy will attention your address prevent social wish heavy green study phone arrive enter.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2021-01-20",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 19,
+        "policyTitle": "Letter southern prepare option",
+        "shortDescription": "We capital increase read see do fish still effect action agent risk.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2023-11-05",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 20,
+        "policyTitle": "Public what light",
+        "shortDescription": "True less this though partner clearly task moment shoulder picture three share trade apply case.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2023-03-02",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 21,
+        "policyTitle": "Art painting",
+        "shortDescription": "Better energy news make director professional knowledge tonight research natural various.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2024-09-16",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 22,
+        "policyTitle": "Second speech lose hotel",
+        "shortDescription": "Against step behavior employee sea mean follow sense expect wind quickly all thank wife store age.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2023-08-30",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 23,
+        "policyTitle": "Rate moment baby challenge commercial",
+        "shortDescription": "Financial place fire while red difference any your ready popular follow open probably author.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2020-11-01",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 24,
+        "policyTitle": "Edge mention agency high world",
+        "shortDescription": "Right among decide hit baby yard policy major figure federal go as.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2023-09-11",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 25,
+        "policyTitle": "Entire turn as same",
+        "shortDescription": "Republican purpose wind page include expert all.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2023-09-15",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 26,
+        "policyTitle": "Office half election again seem",
+        "shortDescription": "World would total goal form college class camera much put man area ground PM prove.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2024-08-29",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 27,
+        "policyTitle": "Recent them ok recent",
+        "shortDescription": "Eight enter become crime role even face city bring will student say international then opportunity guy.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2024-09-29",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 28,
+        "policyTitle": "Federal position edge",
+        "shortDescription": "By attention learn unit together arrive year top.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2020-05-01",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 29,
+        "policyTitle": "It expect source word",
+        "shortDescription": "Audience painting rate throw leg not indeed it sing traditional.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2022-02-27",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 30,
+        "policyTitle": "Politics if attack pay off",
+        "shortDescription": "Test especially final effort push dog add choose cell.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2022-07-15",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 31,
+        "policyTitle": "Exist career woman baby thousand",
+        "shortDescription": "Raise human experience recognize child test up mention me structure step.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2024-09-05",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 32,
+        "policyTitle": "Society position",
+        "shortDescription": "Enter nice inside firm music ball offer include mouth.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2022-04-09",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 33,
+        "policyTitle": "Range leg summer put focus",
+        "shortDescription": "Forward value style serve hundred their others reality.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2022-12-25",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 34,
+        "policyTitle": "Who safe",
+        "shortDescription": "Authority turn make always indeed quite through clearly energy whole base.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2020-11-18",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 35,
+        "policyTitle": "Strategy list various",
+        "shortDescription": "Keep window decision keep western civil process doctor know quite serve although before we.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2024-11-30",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 36,
+        "policyTitle": "Seven pretty skill",
+        "shortDescription": "Help often analysis head everything wish middle message dinner listen matter hard lawyer sure.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2022-02-12",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 37,
+        "policyTitle": "South scene factor",
+        "shortDescription": "Continue from eat interesting PM employee include middle do weight music financial example turn or.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2020-12-16",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 38,
+        "policyTitle": "Reveal interest sit practice crime",
+        "shortDescription": "Parent some wish clear statement century purpose decide visit establish speak number baby.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2024-08-26",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 39,
+        "policyTitle": "Since system rich",
+        "shortDescription": "Some difference popular deep standard trial cell beyond gas fund raise staff boy.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2024-11-02",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 40,
+        "policyTitle": "Right technology turn",
+        "shortDescription": "Western or lot by common right style use professor hundred.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2020-07-18",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 41,
+        "policyTitle": "Happy speak others",
+        "shortDescription": "Approach question guy better discover contain interesting western role east yard.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2023-02-21",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 42,
+        "policyTitle": "Activity yes and",
+        "shortDescription": "Until letter real authority image live total indeed staff morning watch visit draw sign.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2023-03-27",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 43,
+        "policyTitle": "Push ever by image argue",
+        "shortDescription": "One enjoy like stock agree spend middle shake.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2021-03-19",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 44,
+        "policyTitle": "Consumer behind",
+        "shortDescription": "Million four effect require technology generation catch media research physical shake treatment rock cup.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2022-09-18",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 45,
+        "policyTitle": "However piece",
+        "shortDescription": "Pull strong idea travel rock response home shake collection.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2022-08-29",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 46,
+        "policyTitle": "Try indeed",
+        "shortDescription": "Expert grow activity security well memory tonight actually either over entire see career base.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2021-05-23",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 47,
+        "policyTitle": "Bill choose quality",
+        "shortDescription": "Station after seem near black decision those economic fear goal answer eye moment just wife red.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2020-09-15",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 48,
+        "policyTitle": "Tough improve yourself",
+        "shortDescription": "Work change someone arm during song itself yes through particular TV hour close do.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2022-11-05",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 49,
+        "policyTitle": "Far kid speech buy",
+        "shortDescription": "Building clear radio garden site hard left work level military prepare image.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2022-04-22",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 50,
+        "policyTitle": "Foreign quality would name large",
+        "shortDescription": "Table star against son live night describe benefit.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2021-10-27",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 51,
+        "policyTitle": "Whether town",
+        "shortDescription": "Wife mother choice military walk wide out.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2021-08-15",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 52,
+        "policyTitle": "Indeed drop you",
+        "shortDescription": "Or building meet official PM benefit special experience.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2020-11-08",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 53,
+        "policyTitle": "Develop hair first wife",
+        "shortDescription": "Entire simple ten radio company white part reach change.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2020-02-06",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 54,
+        "policyTitle": "Represent fact cost something game",
+        "shortDescription": "Deep part to factor note direction church issue certainly interview economy.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2022-09-27",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 55,
+        "policyTitle": "Quickly remain ask old",
+        "shortDescription": "Man training action production street yourself center live.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2022-10-03",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 56,
+        "policyTitle": "Front future ask wife",
+        "shortDescription": "Worker bag us respond ok interesting skill mind against.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2023-06-15",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 57,
+        "policyTitle": "Adult make around see",
+        "shortDescription": "If purpose improve president public write must.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2022-11-09",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 58,
+        "policyTitle": "Six bring role against give",
+        "shortDescription": "Mind hundred religious Democrat sense describe last follow then police occur establish.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2024-02-07",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 59,
+        "policyTitle": "Free appear themselves say else",
+        "shortDescription": "Outside of ready may set reality assume suggest level attention person image record rock.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2024-10-26",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 60,
+        "policyTitle": "Such impact fly interview",
+        "shortDescription": "Key you letter receive thus scientist dinner charge enter source support threat like.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2021-08-23",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 61,
+        "policyTitle": "Hit truth",
+        "shortDescription": "Along game time season hard wife activity father start everything man figure west.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2020-09-08",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 62,
+        "policyTitle": "Reduce law garden share close",
+        "shortDescription": "There local modern somebody full understand song stage attention.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2023-01-08",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 63,
+        "policyTitle": "Subject tree food",
+        "shortDescription": "Half agent actually realize modern piece perform get whole song media matter.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2020-06-08",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 64,
+        "policyTitle": "Over skin research political",
+        "shortDescription": "She factor each west east peace suffer.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2020-06-25",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 65,
+        "policyTitle": "Buy exactly citizen system",
+        "shortDescription": "Fall good effort score size course professional during themselves choose them especially hot let.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2020-08-27",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 66,
+        "policyTitle": "Environmental under minute wear",
+        "shortDescription": "Military attention company little range lead already.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2023-07-26",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 67,
+        "policyTitle": "Above establish",
+        "shortDescription": "Reason son garden buy itself girl tonight morning.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2024-11-17",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 68,
+        "policyTitle": "Question must condition",
+        "shortDescription": "Set situation treatment term its teach organization be message down example five attorney.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2023-04-30",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 69,
+        "policyTitle": "Entire fear soon still",
+        "shortDescription": "Sing up one argue bad should course understand thus task size interest.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2020-11-10",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 70,
+        "policyTitle": "Truth shake especially",
+        "shortDescription": "Clearly believe return entire camera cell past wear test mission.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2024-05-27",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 71,
+        "policyTitle": "Near assume money",
+        "shortDescription": "Development beyond certainly realize economic sister per use within responsibility impact party.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2024-03-08",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 72,
+        "policyTitle": "Particular successful guy between",
+        "shortDescription": "Rate administration buy energy must senior among budget she subject.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2024-07-31",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 73,
+        "policyTitle": "Drug discussion against",
+        "shortDescription": "Sense between major like old wall long prove respond ability hotel fly five.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2024-12-16",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 74,
+        "policyTitle": "Lawyer hotel baby station",
+        "shortDescription": "Type drive own practice serious also make claim.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2021-06-07",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 75,
+        "policyTitle": "Job author",
+        "shortDescription": "Figure think hard arm hit memory get positive.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2020-03-30",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 76,
+        "policyTitle": "Above agency key",
+        "shortDescription": "Yeah sort worker special relationship TV eat.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2023-08-06",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 77,
+        "policyTitle": "Edge skill financial",
+        "shortDescription": "Trouble education building fill great former agency late girl worry.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2024-04-16",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 78,
+        "policyTitle": "Girl any physical voice bed",
+        "shortDescription": "Particularly meet community business order relate then building size nor tonight environmental where.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2023-08-16",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 79,
+        "policyTitle": "Your put amount enough",
+        "shortDescription": "Require break generation of ok film accept.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2021-03-29",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 80,
+        "policyTitle": "They since always",
+        "shortDescription": "Impact majority direction more side especially kid thousand street than as.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2022-04-22",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 81,
+        "policyTitle": "Alone shake soldier Mrs her",
+        "shortDescription": "Friend first democratic yeah number card citizen man expert street year history among training right.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2021-07-01",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 82,
+        "policyTitle": "Need itself",
+        "shortDescription": "Occur life should ahead history idea place cup stand.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2022-12-09",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 83,
+        "policyTitle": "Support box interview",
+        "shortDescription": "Difficult project begin understand at leader though condition Mrs mean style campaign town dark.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2024-03-21",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 84,
+        "policyTitle": "Commercial that food",
+        "shortDescription": "Attack region dog quite rock door sport better hold entire agree speak community industry.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2020-04-27",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 85,
+        "policyTitle": "Office not specific fight",
+        "shortDescription": "Player floor wear allow finish reflect discuss grow black state.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2021-03-24",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 86,
+        "policyTitle": "Treatment much teacher little",
+        "shortDescription": "Wide pressure fear rise support blood forward author study pressure loss serve structure remember public research.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2020-04-27",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 87,
+        "policyTitle": "Institution explain present between",
+        "shortDescription": "Safe process little treatment enter financial democratic Mr item true six they send.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2020-12-24",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 88,
+        "policyTitle": "Maintain report member",
+        "shortDescription": "National second agent floor include can board enjoy see.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2023-04-04",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 89,
+        "policyTitle": "Field mention",
+        "shortDescription": "Report pay future source quickly admit record stand soldier.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2022-07-25",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 90,
+        "policyTitle": "Contain by war sport lawyer",
+        "shortDescription": "Church hear single my dinner toward red source themselves manager yourself from paper.",
+        "topic": {
+            "id": 2,
+            "name": "Economy"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2022-07-18",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    },
+    {
+        "id": 91,
+        "policyTitle": "Leader trouble perform consumer",
+        "shortDescription": "Her fund next different allow moment quickly.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2021-04-08",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 92,
+        "policyTitle": "Charge available",
+        "shortDescription": "Republican car worker suggest building break choose half among degree.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2022-12-17",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 93,
+        "policyTitle": "Late game final fire",
+        "shortDescription": "Growth action bag late modern everything threat case information run.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 2,
+            "name": "California"
+        },
+        "dateIntroduced": "2023-05-31",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 94,
+        "policyTitle": "Want agent mind",
+        "shortDescription": "Whether television his bar rich recently great trip trial them.",
+        "topic": {
+            "id": 5,
+            "name": "Education"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2020-09-22",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 95,
+        "policyTitle": "Other art fine possible how",
+        "shortDescription": "Congress idea admit about out image Mr along effort after break energy marriage beat three.",
+        "topic": {
+            "id": 3,
+            "name": "Health"
+        },
+        "location": {
+            "id": 5,
+            "name": "Illinois"
+        },
+        "dateIntroduced": "2021-02-10",
+        "status": {
+            "id": 3,
+            "name": "Passed"
+        }
+    },
+    {
+        "id": 96,
+        "policyTitle": "Statement professional others",
+        "shortDescription": "Feel moment blood score low bring pass between majority body scene glass ok.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2020-08-22",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 97,
+        "policyTitle": "True movie idea often",
+        "shortDescription": "Research similar light your hour six long such tree someone information.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2020-07-21",
+        "status": {
+            "id": 2,
+            "name": "Under consideration"
+        }
+    },
+    {
+        "id": 98,
+        "policyTitle": "Education whom ball do kid",
+        "shortDescription": "Officer sure law buy plan receive near.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 3,
+            "name": "Texas"
+        },
+        "dateIntroduced": "2022-07-20",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 99,
+        "policyTitle": "Past provide",
+        "shortDescription": "Discover view enough especially husband fire young book draw or rich experience.",
+        "topic": {
+            "id": 4,
+            "name": "Technology"
+        },
+        "location": {
+            "id": 1,
+            "name": "New York"
+        },
+        "dateIntroduced": "2020-05-12",
+        "status": {
+            "id": 4,
+            "name": "Failed"
+        }
+    },
+    {
+        "id": 100,
+        "policyTitle": "Middle hotel skin TV bill",
+        "shortDescription": "Create worker into time value court actually image sell involve.",
+        "topic": {
+            "id": 1,
+            "name": "Environment"
+        },
+        "location": {
+            "id": 4,
+            "name": "Florida"
+        },
+        "dateIntroduced": "2023-04-07",
+        "status": {
+            "id": 1,
+            "name": "Introduced"
+        }
+    }
+]
