@@ -1,10 +1,7 @@
 "use client";
 
-import {
-  type RefAttributes,
-  type ForwardRefExoticComponent,
-  type ReactNode,
-} from "react";
+import { type RefAttributes, type ForwardRefExoticComponent } from "react";
+import { useRouter } from "next/navigation";
 import { Menu, Layout, theme, type MenuProps } from "antd";
 import {
   PieChartOutlined,
@@ -43,14 +40,14 @@ const items: MenuItem[] = [
 ];
 
 const Sidebar = () => {
-  const onClick: MenuProps["onClick"] = (e) => {
-    console.log("click ", e);
-  };
-
-  // theme
+  const router = useRouter();
   const {
     token: { colorBgLayout },
   } = theme.useToken();
+
+  const onClick: MenuProps["onClick"] = (e) => {
+    router.push(`/${e.key}`);
+  };
 
   return (
     <Sider
@@ -58,7 +55,6 @@ const Sidebar = () => {
       collapsible
       breakpoint="md"
       width={210}
-      // collapsedWidth="0"
       onBreakpoint={(broken) => {
         console.log(broken);
       }}
