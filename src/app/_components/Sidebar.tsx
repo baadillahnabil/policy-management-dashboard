@@ -68,7 +68,7 @@ const Sidebar = () => {
       <Menu
         theme="light"
         mode="inline"
-        defaultSelectedKeys={[pathname.slice(1)]}
+        selectedKeys={[pathname.slice(1)]}
         items={items}
         onClick={onClick}
         className="bg-transparent border-none [&>li]:!p-2 [&>li]:mb-4 [&>li:hover]:bg-none"
