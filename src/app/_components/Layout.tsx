@@ -3,6 +3,7 @@
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { StyleProvider } from "@ant-design/cssinjs";
 import { Layout, ConfigProvider } from "antd";
+import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 
 import Sidebar from "@/app/_components/Sidebar";
 import Navbar from "@/app/_components/Navbar";
@@ -27,6 +28,7 @@ export default function MainLayout({
               <Content className="p-6 mx-4 my-6">{children}</Content>
             </Layout>
           </Layout>
+          <ProgressBar height="3px" color="#1890FF" />
         </ConfigProvider>
       </StyleProvider>
     </AntdRegistry>
