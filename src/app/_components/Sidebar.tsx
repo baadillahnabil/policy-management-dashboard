@@ -1,7 +1,8 @@
 "use client";
 
 import { type RefAttributes, type ForwardRefExoticComponent } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { useRouter } from "next-nprogress-bar";
 import { Menu, Layout, theme, type MenuProps } from "antd";
 import { AppstoreOutlined } from "@ant-design/icons";
 import { AntdIconProps } from "@ant-design/icons/lib/components/AntdIcon";
@@ -33,6 +34,8 @@ const items: MenuItem[] = Routes.map((route) => ({
 
 const Sidebar = () => {
   const router = useRouter();
+  const pathname = usePathname();
+
   const {
     token: { colorBgLayout },
   } = theme.useToken();
@@ -65,7 +68,7 @@ const Sidebar = () => {
       <Menu
         theme="light"
         mode="inline"
-        defaultSelectedKeys={["overview"]}
+        defaultSelectedKeys={[pathname.slice(1)]}
         items={items}
         onClick={onClick}
         className="bg-transparent border-none [&>li]:!p-2 [&>li]:mb-4 [&>li:hover]:bg-none"
