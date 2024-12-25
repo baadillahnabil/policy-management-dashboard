@@ -1,17 +1,17 @@
-import prisma from "@/app/_utils/prisma";
+import { getData } from "@/app/(routes)/data/_actions/actions";
+
 import Container from "@/app/_components/Container";
 
 import Cards from "@/app/(routes)/data/_components/Cards/Cards";
-import Header from "@/app/(routes)/data/_components/Header";
+import Header from "@/app/(routes)/data/_components/Header/Header";
+import { revalidatePath } from "next/cache";
 
-export const getData = async () => {
-  return await prisma.policy.findMany({
-    include: { location: true, status: true, topic: true },
-  });
-};
-
-const Data = async () => {
-  const data = await getData();
+interface DataPageProps {
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+const Data = async ({ searchParams }: DataPageProps) => {
+  const data = await getData(searchParams);
+  revalidatePath("/data");
 
   return (
     <Container>
