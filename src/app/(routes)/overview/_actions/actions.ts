@@ -1,5 +1,7 @@
 "use server";
 
+import dayjs from "dayjs";
+
 import prisma from "@/app/_utils/prisma";
 import { type PromiseReturnType } from "@prisma/client/extension";
 
@@ -52,5 +54,33 @@ export const getPolicyByStatus = async () => {
     numberOfPolicies: item._count.id,
   }));
 };
+
+export const getPolicyTrendsOverTime = async () => {
+  const data = await prisma.policy.groupBy({
+    by: ["dateIntroduced"],
+    _count: {
+      id: true,
+    },
+  });
+
+  const groupedByMonth = data.reduce((acc, item) => {
+    const month = dayjs(item.dateIntroduced).format("YYYY-MM");
+    if (!acc[month]) {
+      acc[month] = 0;
+    }
+    acc[month] += item._count.id;
+    return acc;
+  }, {} as Record<string, number>);
+
+  const sortedData = Object.entries(groupedByMonth)
+    .map(([date, numberOfPolicies]) => ({ date, numberOfPolicies }))
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+
+  return sortedData;
+};
+
+export type GetPolicyTrendsOverTimeType = PromiseReturnType<
+  typeof getPolicyTrendsOverTime
+>;
 
 export type GetPolicyByStatusType = PromiseReturnType<typeof getPolicyByStatus>;
