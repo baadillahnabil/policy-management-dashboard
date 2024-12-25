@@ -1,7 +1,6 @@
 "use server";
 
 import { revalidatePath as revalidatePathNext } from "next/cache";
-import dayjs from "dayjs";
 
 import prisma from "@/app/_utils/prisma";
 import { type PromiseReturnType } from "@prisma/client/extension";
@@ -24,7 +23,6 @@ export const getData = async ({
   dateFrom,
   dateTo,
 }: GetDataPayload) => {
-  console.log("getData", dateFrom, dateTo);
   return await prisma.policy.findMany({
     include: { location: true, status: true, topic: true },
     where: {
