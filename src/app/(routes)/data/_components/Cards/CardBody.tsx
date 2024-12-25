@@ -6,13 +6,12 @@ import {
   FaInfoCircle,
   FaCalendarAlt,
 } from "react-icons/fa";
-import { type PromiseReturnType } from "@prisma/client/extension";
 import dayjs from "dayjs";
 
-import { getData } from "@/app/(routes)/data/page";
+import { type GetDataType } from "@/app/(routes)/data/_actions/actions";
 
 interface CardBody {
-  item: PromiseReturnType<typeof getData>[number];
+  item: GetDataType[number];
 }
 
 const CardBody = ({ item }: CardBody) => {

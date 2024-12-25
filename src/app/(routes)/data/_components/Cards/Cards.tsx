@@ -1,7 +1,7 @@
 import { Card } from "antd";
 
 import { type PromiseReturnType } from "@prisma/client/extension";
-import { getData } from "@/app/(routes)/data/page";
+import { getData } from "@/app/(routes)/data/_actions/actions";
 
 import CardBody from "@/app/(routes)/data/_components/Cards/CardBody";
 
