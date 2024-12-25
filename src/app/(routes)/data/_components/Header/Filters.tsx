@@ -1,7 +1,9 @@
 "use client";
 
+import { useSearchParams } from "next/navigation";
 import { useRouter } from "next-nprogress-bar";
 import { Form, Select, DatePicker, type FormProps } from "antd";
+import dayjs from "dayjs";
 
 import {
   GetLocationsType,
@@ -20,6 +22,8 @@ interface FiltersProps {
 
 const Filters = ({ locations, topics, statuses }: FiltersProps) => {
   const router = useRouter();
+  const searchParams = useSearchParams();
+
   const [form] = Form.useForm();
 
   const handleFieldsChange: FormProps["onValuesChange"] = async () => {
@@ -27,6 +31,10 @@ const Filters = ({ locations, topics, statuses }: FiltersProps) => {
   };
   const handleSubmit: FormProps["onFinish"] = async () => {
     const formData = form.getFieldsValue();
+    formData.dateFrom = formData.date?.[0]?.format("YYYY-MM-DD");
+    formData.dateTo = formData.date?.[1]?.format("YYYY-MM-DD");
+    delete formData.date;
+
     const queryString = Object.keys(formData)
       .filter((key) => formData[key] !== undefined && formData[key] !== null)
       .map((key) => createQueryString(key, formData[key]))
@@ -38,6 +46,28 @@ const Filters = ({ locations, topics, statuses }: FiltersProps) => {
   return (
     <Form
       form={form}
+      initialValues={{
+        location:
+          Number(searchParams.get("location")) <= 0
+            ? undefined
+            : Number(searchParams.get("location")),
+        topic:
+          Number(searchParams.get("topic")) <= 0
+            ? undefined
+            : Number(searchParams.get("topic")),
+        status:
+          Number(searchParams.get("status")) <= 0
+            ? undefined
+            : Number(searchParams.get("status")),
+        date: [
+          searchParams.get("dateFrom")
+            ? dayjs(searchParams.get("dateFrom"))
+            : undefined,
+          searchParams.get("dateTo")
+            ? dayjs(searchParams.get("dateTo"))
+            : undefined,
+        ],
+      }}
       layout="vertical"
       onFinish={handleSubmit}
       onValuesChange={handleFieldsChange}
@@ -81,7 +111,11 @@ const Filters = ({ locations, topics, statuses }: FiltersProps) => {
         />
       </Form.Item>
       <Form.Item name="date" label="Filter By Date:" className="mb-0">
-        <RangePicker size="small" />
+        <RangePicker
+          size="small"
+          format={{ format: "DD-MM-YYYY" }}
+          maxDate={dayjs(new Date())}
+        />
       </Form.Item>
     </Form>
   );
