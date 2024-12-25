@@ -28,3 +28,29 @@ export const getPolicyByTopic = async () => {
 };
 
 export type GetPolicyByTopicType = PromiseReturnType<typeof getPolicyByTopic>;
+
+export const getPolicyByStatus = async () => {
+  const data = await prisma.policy.groupBy({
+    by: ["statusId"],
+    _count: {
+      id: true,
+    },
+  });
+
+  const statuses = await prisma.status.findMany({
+    select: {
+      id: true,
+      name: true,
+    },
+  });
+
+  const statusMap = new Map(statuses.map((status) => [status.id, status.name]));
+
+  return data.map((item) => ({
+    statusId: item.statusId,
+    status: statusMap.get(item.statusId) ?? "Unknown",
+    numberOfPolicies: item._count.id,
+  }));
+};
+
+export type GetPolicyByStatusType = PromiseReturnType<typeof getPolicyByStatus>;

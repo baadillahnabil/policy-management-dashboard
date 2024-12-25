@@ -67,7 +67,7 @@ const BarChart = ({ data }: BarChartProps) => {
       items: [
         {
           field: "numberOfPolicies",
-          name: "Number of Policies",
+          name: "Number of Policies:",
         },
       ],
     },
@@ -78,14 +78,9 @@ const BarChart = ({ data }: BarChartProps) => {
   };
 
   return (
-    <>
-      <Container className="grow basis-2/5">
-        <Column {...configs} />
-      </Container>
-      <Container className="grow basis-3/5">
-        <h1>Pie Chart</h1>
-      </Container>
-    </>
+    <Container className="grow basis-2/5">
+      <Column {...configs} />
+    </Container>
   );
 };
 
