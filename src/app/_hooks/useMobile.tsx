@@ -3,9 +3,10 @@
 import { useState, useLayoutEffect } from "react";
 
 const useMobile = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
   useLayoutEffect(() => {
+    setIsMobile(window.innerWidth < 768);
     window.addEventListener("resize", () => {
       setIsMobile(window.innerWidth < 768);
     });
