@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { Pie, type PlotEvent } from "@ant-design/plots";
 import { useRouter } from "next-nprogress-bar";
 
 import ChartContainer from "@/app/(routes)/overview/_components/ChartContainer";
+import Loading from "@/app/(routes)/overview/_components/Loading";
 import { type GetPolicyByStatusType } from "@/app/(routes)/overview/_actions/actions";
 import { PATH, createQueryString } from "@/app/_utils/routes";
 
@@ -13,6 +15,8 @@ interface PieChartProps {
 
 const PieChart = ({ data }: PieChartProps) => {
   const router = useRouter();
+
+  const [loading, setLoading] = useState(true);
 
   const handleBarClick = (event: PlotEvent) => {
     const barIndex = event.target.__data__.index;
@@ -44,7 +48,8 @@ const PieChart = ({ data }: PieChartProps) => {
       ],
     },
     legend: false,
-    onReady: ({ chart }: any) => {
+    onReady: ({ chart }: PlotEvent) => {
+      setLoading(false);
       chart.on("element:click", handleBarClick);
     },
   };
@@ -55,6 +60,7 @@ const PieChart = ({ data }: PieChartProps) => {
       description="Showcase the proportion of policies based on their status"
       className="grow basis-2/6"
     >
+      {loading && <Loading />}
       <Pie {...config} />
     </ChartContainer>
   );

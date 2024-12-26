@@ -1,10 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import { Column, type PlotEvent } from "@ant-design/plots";
 import { theme } from "antd";
 import { useRouter } from "next-nprogress-bar";
 
 import ChartContainer from "@/app/(routes)/overview/_components/ChartContainer";
+import Loading from "@/app/(routes)/overview/_components/Loading";
 import { type GetPolicyByTopicType } from "@/app/(routes)/overview/_actions/actions";
 import { PATH, createQueryString } from "@/app/_utils/routes";
 
@@ -14,6 +16,9 @@ interface BarChartProps {
 
 const BarChart = ({ data }: BarChartProps) => {
   const router = useRouter();
+
+  const [loading, setLoading] = useState(true);
+
   const {
     token: { green5, gold5, blue5, purple5, volcano5 },
   } = theme.useToken();
@@ -48,6 +53,7 @@ const BarChart = ({ data }: BarChartProps) => {
         }
       },
     },
+    animate: { enter: { type: "growInY", duration: 1000 } },
     label: {
       text: (originData: GetPolicyByTopicType[number]) => {
         return `${originData.numberOfPolicies} Policies`;
@@ -64,7 +70,8 @@ const BarChart = ({ data }: BarChartProps) => {
       ],
     },
     legend: false,
-    onReady: ({ chart }: any) => {
+    onReady: ({ chart }: PlotEvent) => {
+      setLoading(false);
       chart.on("element:click", handleBarClick);
     },
   };
@@ -75,6 +82,7 @@ const BarChart = ({ data }: BarChartProps) => {
       description="Visualize the distribution of policies across various topics"
       className="grow basis-2/5"
     >
+      {loading && <Loading />}
       <Column {...configs} />
     </ChartContainer>
   );
