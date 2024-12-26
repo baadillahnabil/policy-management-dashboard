@@ -124,3 +124,45 @@ export const getPolicyTrendsByStatusOverTime = async () => {
 export type GetPolicyTrendsByStatusOverTimeType = PromiseReturnType<
   typeof getPolicyTrendsByStatusOverTime
 >;
+
+export const getPolicyByLocationAndTime = async () => {
+  const data = await prisma.policy.groupBy({
+    by: ["locationId", "dateIntroduced"],
+    _count: {
+      id: true,
+    },
+  });
+
+  const locations = await prisma.location.findMany({
+    select: {
+      id: true,
+      name: true,
+    },
+  });
+
+  const locationMap = new Map(
+    locations.map((location) => [location.id, location.name])
+  );
+
+  const groupedByLocationAndMonth = data.reduce((acc, item) => {
+    const month = dayjs(item.dateIntroduced).format("YYYY-MM");
+    const location = locationMap.get(item.locationId) ?? "Unknown";
+    const key = `${location}-${month}`;
+
+    if (!acc[key]) {
+      acc[key] = { location, date: month, numberOfPolicies: 0 };
+    }
+    acc[key].numberOfPolicies += item._count.id;
+    return acc;
+  }, {} as Record<string, { location: string; date: string; numberOfPolicies: number }>);
+
+  const sortedData = Object.values(groupedByLocationAndMonth).sort(
+    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+  );
+
+  return sortedData;
+};
+
+export type GetPolicyByLocationAndTimeType = PromiseReturnType<
+  typeof getPolicyByLocationAndTime
+>;
