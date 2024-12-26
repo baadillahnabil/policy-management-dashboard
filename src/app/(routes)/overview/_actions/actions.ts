@@ -55,6 +55,8 @@ export const getPolicyByStatus = async () => {
   }));
 };
 
+export type GetPolicyByStatusType = PromiseReturnType<typeof getPolicyByStatus>;
+
 export const getPolicyTrendsOverTime = async () => {
   const data = await prisma.policy.groupBy({
     by: ["dateIntroduced"],
@@ -83,4 +85,42 @@ export type GetPolicyTrendsOverTimeType = PromiseReturnType<
   typeof getPolicyTrendsOverTime
 >;
 
-export type GetPolicyByStatusType = PromiseReturnType<typeof getPolicyByStatus>;
+export const getPolicyTrendsByStatusOverTime = async () => {
+  const data = await prisma.policy.groupBy({
+    by: ["dateIntroduced", "statusId"],
+    _count: {
+      id: true,
+    },
+  });
+
+  const statuses = await prisma.status.findMany({
+    select: {
+      id: true,
+      name: true,
+    },
+  });
+
+  const statusMap = new Map(statuses.map((status) => [status.id, status.name]));
+
+  const groupedByMonthAndStatus = data.reduce((acc, item) => {
+    const month = dayjs(item.dateIntroduced).format("YYYY-MM");
+    const status = statusMap.get(item.statusId) ?? "Unknown";
+    const key = `${month}-${status}`;
+
+    if (!acc[key]) {
+      acc[key] = { date: month, numberOfPolicies: 0, status };
+    }
+    acc[key].numberOfPolicies += item._count.id;
+    return acc;
+  }, {} as Record<string, { date: string; numberOfPolicies: number; status: string }>);
+
+  const sortedData = Object.values(groupedByMonthAndStatus).sort(
+    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+  );
+
+  return sortedData;
+};
+
+export type GetPolicyTrendsByStatusOverTimeType = PromiseReturnType<
+  typeof getPolicyTrendsByStatusOverTime
+>;
