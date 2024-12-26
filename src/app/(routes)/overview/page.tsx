@@ -24,19 +24,19 @@ const Overview = async () => {
   const dataPolicyByLocationAndTime = await getPolicyByLocationAndTime();
 
   return (
-    <section className="flex flex-col gap-6">
-      <section className="flex items-center justify-center gap-6">
+    <section className="flex flex-col gap-6 flex-wrap">
+      <section className="flex items-center justify-center gap-6 flex-wrap xl:flex-nowrap">
         <BarChart data={dataPolicyByTopic} />
         <LineChart data={dataPolicyTrendsOverTime} />
       </section>
-      <section className="flex items-center justify-center gap-6">
+      <section className="flex items-center justify-center gap-6 flex-wrap xl:flex-nowrap">
         <StackBarChart
           data={dataPolicyTrendsByStatusOverTime}
           statuses={statuses}
         />
         <PieChart data={dataPolicyByStatus} />
       </section>
-      <section className="flex items-center justify-center gap-6">
+      <section className="flex items-center justify-center gap-6 flex-wrap xl:flex-nowrap">
         <HeatMapChart data={dataPolicyByLocationAndTime} />
       </section>
     </section>

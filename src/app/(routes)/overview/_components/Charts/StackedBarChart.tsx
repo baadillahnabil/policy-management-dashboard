@@ -78,7 +78,7 @@ const StackedBarChart = ({ data, statuses }: StackedBarChartProps) => {
     <ChartContainer
       title="Stacked Bar Chart: Policy Introduction by Status Over Time"
       description="Compare the introduction of policies over time segmented by status"
-      className="grow basis-4/6"
+      className="grow basis-full xl:basis-4/6"
     >
       {loading && <Loading />}
       <Column {...configs} />

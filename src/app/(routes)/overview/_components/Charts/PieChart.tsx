@@ -58,7 +58,7 @@ const PieChart = ({ data }: PieChartProps) => {
     <ChartContainer
       title="Pie Chart: Policy Status Breakdown"
       description="Showcase the proportion of policies based on their status"
-      className="grow basis-2/6"
+      className="grow basis-full xl:basis-2/6"
     >
       {loading && <Loading />}
       <Pie {...config} />

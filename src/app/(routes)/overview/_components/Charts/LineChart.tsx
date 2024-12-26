@@ -50,7 +50,7 @@ const LineChart = ({ data }: LineChartProps) => {
     <ChartContainer
       title="Line Chart: Policy Trends Over Time"
       description="Explore trends in policy introductions over time"
-      className="grow basis-3/5"
+      className="grow basis-full xl:basis-3/5"
     >
       {loading && <Loading />}
       <Line {...config} />

@@ -64,7 +64,7 @@ const HeatMapChart = ({ data }: HeatMapChartProps) => {
     <ChartContainer
       title="Heatmap: Policy Introduction by Location and Time"
       description="Visualize the concentration of policy introductions across different locations and time periods"
-      className="grow basis-5/5"
+      className="grow basis-full"
     >
       {loading && <Loading />}
       <Heatmap {...config} />

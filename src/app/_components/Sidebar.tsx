@@ -32,7 +32,11 @@ const items: MenuItem[] = Routes.map((route) => ({
   ...MenuIconLabel(route),
 }));
 
-const Sidebar = () => {
+interface SidebarProps {
+  setCollapsed: (collapsed: boolean) => void;
+}
+
+const Sidebar = ({ setCollapsed }: SidebarProps) => {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -41,28 +45,21 @@ const Sidebar = () => {
   } = theme.useToken();
 
   const onClick: MenuProps["onClick"] = (e) => {
+    setCollapsed(true);
     router.push(`/${e.key}`);
   };
 
   return (
     <Sider
-      trigger={null}
-      collapsible
-      collapsedWidth={0}
-      breakpoint="md"
       width={210}
-      onBreakpoint={(broken) => {
-        console.log(broken);
-      }}
-      onCollapse={(collapsed, type) => {
-        console.log(collapsed, type);
-      }}
       style={{ backgroundColor: colorBgLayout }}
-      className="p-5 mt-5 ml-5 fixed top-0 left-0 min-h-screen"
+      className="p-5 mt-5 md:ml-5 md:fixed md:top-0 md:left-0 min-h-screen transition-all"
     >
       <section className="flex justify-center items-center gap-4">
-        <AppstoreOutlined className="text-3xl" />
-        <span className="text-sm font-bold">Dynamic Policy Dashboard</span>
+        <AppstoreOutlined className="text-3xl " />
+        <span className="text-xs md:text-sm font-bold">
+          Dynamic Policy Dashboard
+        </span>
       </section>
       <hr className="border-t border-gray-300 my-6" />
       <Menu

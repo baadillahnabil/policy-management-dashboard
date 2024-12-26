@@ -80,7 +80,7 @@ const BarChart = ({ data }: BarChartProps) => {
     <ChartContainer
       title="Bar Chart: Policy Distribution by Topic"
       description="Visualize the distribution of policies across various topics"
-      className="grow basis-2/5"
+      className="grow basis-full xl:basis-2/5"
     >
       {loading && <Loading />}
       <Column {...configs} />
