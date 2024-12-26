@@ -73,6 +73,13 @@ bun dev
 
 Open http://localhost:3000 with your browser to see the result.
 
+--
+
+#### Lighthouse Score
+
+[<img alt="alt_text" width="500px" src="https://media.cleanshot.cloud/media/102883/lXtI4l4t3UQgddQSPe9UbGFKMP7z3y79Oy5jGvVt.jpeg?Expires=1735238024&Signature=VO1hFgM0EUBAQh-yAC5h4ssbi~YVQwtwz913GI9LIXnlvkgWPE4zoLEsO41bjV~nyJAiRO9y3MqUBFjzmqCuzjLj2SRcTQgTIGes4sU0GPWeFEULa8oSHQUSt-mpVvaWuZ0s-VxzEjnCnB4lxVNp254M6cIIWUHkj9IwymytieA4l3MPafQ~8lpHYeAqpVb9e3K7m5RPht3xcKY5XJf9NCjFE7TQe4X3mAwCx6daC7hZQseKGamhY6pE00n0WdNR4x1SZpGcXS9VgO33kz~-SEFyeA7eEfU3eSuBSwjk0B2wYAk-1rtVn5pxD7q0i51U2NiLQ32~9uohVLM8laUO-w__&Key-Pair-Id=K269JMAT9ZF4GZ" />](https://share.cleanshot.com/zt2mBQGh)
+
+
 #### Libraries Used
 This project uses the following libraries:
 
