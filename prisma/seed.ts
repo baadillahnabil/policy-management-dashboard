@@ -19,28 +19,12 @@ async function main() {
     { id: 5, name: "Education" },
   ];
 
+  // Upsert topics into the database
   for (const topic of topics) {
     await prisma.topic.upsert({
       where: { id: topic.id },
       update: {},
       create: topic,
-    });
-  }
-
-  // Seed Locations
-  const locations = [
-    { id: 1, name: "New York" },
-    { id: 2, name: "California" },
-    { id: 3, name: "Texas" },
-    { id: 4, name: "Florida" },
-    { id: 5, name: "Illinois" },
-  ];
-
-  for (const location of locations) {
-    await prisma.location.upsert({
-      where: { id: location.id },
-      update: {},
-      create: location,
     });
   }
 
@@ -52,6 +36,7 @@ async function main() {
     { id: 4, name: "Failed" },
   ];
 
+  // Upsert statuses into the database
   for (const status of statuses) {
     await prisma.status.upsert({
       where: { id: status.id },
@@ -60,28 +45,20 @@ async function main() {
     });
   }
 
-  // Seed Policies
-  for (const policy of data) {
+  // Seed policies from the JSON data
+  for (const policy of data.policies) {
     await prisma.policy.create({
-      data: {
-        policyTitle: policy.policyTitle,
-        shortDescription: policy.shortDescription,
-        dateIntroduced: new Date(policy.dateIntroduced),
-        topic: { connect: { id: policy.topic.id } },
-        location: { connect: { id: policy.location.id } },
-        status: { connect: { id: policy.status.id } },
-      },
+      data: policy,
     });
   }
 }
 
+// Execute the main function and handle errors
 main()
-  .then(async () => {
-    console.log("Seeding complete!");
-    await prisma.$disconnect();
-  })
-  .catch(async (e) => {
+  .catch((e) => {
     console.error(e);
-    await prisma.$disconnect();
     process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
   });

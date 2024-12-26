@@ -1,10 +1,10 @@
 "use server";
 
 import dayjs from "dayjs";
-
 import prisma from "@/app/_utils/prisma";
 import { type PromiseReturnType } from "@prisma/client/extension";
 
+// Function to get policies grouped by topic
 export const getPolicyByTopic = async () => {
   const data = await prisma.policy.groupBy({
     by: ["topicId"],
@@ -31,6 +31,7 @@ export const getPolicyByTopic = async () => {
 
 export type GetPolicyByTopicType = PromiseReturnType<typeof getPolicyByTopic>;
 
+// Function to get policies grouped by status
 export const getPolicyByStatus = async () => {
   const data = await prisma.policy.groupBy({
     by: ["statusId"],
@@ -57,6 +58,7 @@ export const getPolicyByStatus = async () => {
 
 export type GetPolicyByStatusType = PromiseReturnType<typeof getPolicyByStatus>;
 
+// Function to get trends in policy introduction over time
 export const getPolicyTrendsOverTime = async () => {
   const data = await prisma.policy.groupBy({
     by: ["dateIntroduced"],
@@ -85,6 +87,7 @@ export type GetPolicyTrendsOverTimeType = PromiseReturnType<
   typeof getPolicyTrendsOverTime
 >;
 
+// Function to get trends in policy introduction over time by status
 export const getPolicyTrendsByStatusOverTime = async () => {
   const data = await prisma.policy.groupBy({
     by: ["dateIntroduced", "statusId"],
@@ -125,6 +128,7 @@ export type GetPolicyTrendsByStatusOverTimeType = PromiseReturnType<
   typeof getPolicyTrendsByStatusOverTime
 >;
 
+// Function to get policies by location and time
 export const getPolicyByLocationAndTime = async () => {
   const data = await prisma.policy.groupBy({
     by: ["locationId", "dateIntroduced"],

@@ -1,40 +1,40 @@
 generator client {
-  provider = "prisma-client-js"
+  provider = "prisma-client-js" // Specifies the Prisma Client generator
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "postgresql" // Specifies the database provider
+  url      = env("DATABASE_URL") // Uses the DATABASE_URL environment variable for the connection string
 }
 
 model Policy {
-  id               Int      @id @default(autoincrement())
-  policyTitle      String
-  shortDescription String
-  topicId          Int
-  locationId       Int
-  dateIntroduced   DateTime
-  statusId         Int
+  id               Int      @id @default(autoincrement()) // Primary key with auto-increment
+  policyTitle      String // Title of the policy
+  shortDescription String // Short description of the policy
+  topicId          Int // Foreign key to the Topic model
+  locationId       Int // Foreign key to the Location model
+  dateIntroduced   DateTime // Date when the policy was introduced
+  statusId         Int // Foreign key to the Status model
 
-  topic    Topic    @relation(fields: [topicId], references: [id])
-  location Location @relation(fields: [locationId], references: [id])
-  status   Status   @relation(fields: [statusId], references: [id])
+  topic    Topic    @relation(fields: [topicId], references: [id]) // Relation to the Topic model
+  location Location @relation(fields: [locationId], references: [id]) // Relation to the Location model
+  status   Status   @relation(fields: [statusId], references: [id]) // Relation to the Status model
 }
 
 model Topic {
-  id       Int      @id @default(autoincrement())
-  name     String   @unique
-  policies Policy[]
+  id       Int      @id @default(autoincrement()) // Primary key with auto-increment
+  name     String   @unique // Unique name for each topic
+  policies Policy[] // One-to-many relationship with policies
 }
 
 model Location {
-  id       Int      @id @default(autoincrement())
-  name     String   @unique
-  policies Policy[]
+  id       Int      @id @default(autoincrement()) // Primary key with auto-increment
+  name     String   @unique // Unique name for each location
+  policies Policy[] // One-to-many relationship with policies
 }
 
 model Status {
-  id       Int      @id @default(autoincrement())
-  name     String   @unique
-  policies Policy[]
+  id       Int      @id @default(autoincrement()) // Primary key with auto-increment
+  name     String   @unique // Unique name for each status
+  policies Policy[] // One-to-many relationship with policies
 }
