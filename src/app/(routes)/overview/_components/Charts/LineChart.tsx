@@ -3,7 +3,7 @@
 import { Line } from "@ant-design/plots";
 import dayjs from "dayjs";
 
-import Container from "@/app/_components/Container";
+import ChartContainer from "@/app/(routes)/overview/_components/ChartContainer";
 import { type GetPolicyTrendsOverTimeType } from "@/app/(routes)/overview/_actions/actions";
 
 interface LineChartProps {
@@ -38,9 +38,13 @@ const LineChart = ({ data }: LineChartProps) => {
   };
 
   return (
-    <Container className="grow basis-3/5">
+    <ChartContainer
+      title="Line Chart: Policy Trends Over Time"
+      description="Explore trends in policy introductions over time"
+      className="grow basis-3/5"
+    >
       <Line {...config} />
-    </Container>
+    </ChartContainer>
   );
 };
 

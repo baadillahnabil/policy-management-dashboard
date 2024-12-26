@@ -3,7 +3,7 @@
 import { Pie, type PlotEvent } from "@ant-design/plots";
 import { useRouter } from "next-nprogress-bar";
 
-import Container from "@/app/_components/Container";
+import ChartContainer from "@/app/(routes)/overview/_components/ChartContainer";
 import { type GetPolicyByStatusType } from "@/app/(routes)/overview/_actions/actions";
 import { PATH, createQueryString } from "@/app/_utils/routes";
 
@@ -33,7 +33,6 @@ const PieChart = ({ data }: PieChartProps) => {
     label: {
       text: (d: GetPolicyByStatusType[number]) =>
         `${d.status}\n ${d.numberOfPolicies}`,
-      position: "spider",
     },
     tooltip: {
       title: "status",
@@ -51,9 +50,13 @@ const PieChart = ({ data }: PieChartProps) => {
   };
 
   return (
-    <Container className="grow basis-3/5">
+    <ChartContainer
+      title="Pie Chart: Policy Status Breakdown"
+      description="Showcase the proportion of policies based on their status"
+      className="grow basis-2/6"
+    >
       <Pie {...config} />
-    </Container>
+    </ChartContainer>
   );
 };
 

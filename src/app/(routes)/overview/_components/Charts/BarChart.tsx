@@ -4,7 +4,7 @@ import { Column, type PlotEvent } from "@ant-design/plots";
 import { theme } from "antd";
 import { useRouter } from "next-nprogress-bar";
 
-import Container from "@/app/_components/Container";
+import ChartContainer from "@/app/(routes)/overview/_components/ChartContainer";
 import { type GetPolicyByTopicType } from "@/app/(routes)/overview/_actions/actions";
 import { PATH, createQueryString } from "@/app/_utils/routes";
 
@@ -26,14 +26,6 @@ const BarChart = ({ data }: BarChartProps) => {
 
   const configs = {
     data,
-    axis: {
-      x: {
-        title: "Topics",
-      },
-      y: {
-        title: "Number of Policies",
-      },
-    },
     xField: "topic",
     yField: "numberOfPolicies",
     style: {
@@ -78,9 +70,13 @@ const BarChart = ({ data }: BarChartProps) => {
   };
 
   return (
-    <Container className="grow basis-2/5">
+    <ChartContainer
+      title="Bar Chart: Policy Distribution by Topic"
+      description="Visualize the distribution of policies across various topics"
+      className="grow basis-2/5"
+    >
       <Column {...configs} />
-    </Container>
+    </ChartContainer>
   );
 };
 
