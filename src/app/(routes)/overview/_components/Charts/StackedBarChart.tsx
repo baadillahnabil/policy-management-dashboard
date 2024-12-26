@@ -1,11 +1,12 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { theme } from "antd";
 import { Column } from "@ant-design/plots";
 import dayjs from "dayjs";
 
 import ChartContainer from "@/app/(routes)/overview/_components/ChartContainer";
+import Loading from "@/app/(routes)/overview/_components/Loading";
 import { type GetPolicyTrendsByStatusOverTimeType } from "@/app/(routes)/overview/_actions/actions";
 import { type GetStatusesType } from "@/app/_actions/actions";
 
@@ -15,6 +16,8 @@ interface StackedBarChartProps {
 }
 
 const StackedBarChart = ({ data, statuses }: StackedBarChartProps) => {
+  const [loading, setLoading] = useState(true);
+
   const {
     token: { blue10, blue9, purple10, orange10 },
   } = theme.useToken();
@@ -32,7 +35,7 @@ const StackedBarChart = ({ data, statuses }: StackedBarChartProps) => {
           return { id, name, color: orange10 };
       }
     });
-  }, [statuses]);
+  }, [blue10, blue9, orange10, purple10, statuses]);
 
   const configs = {
     data,
@@ -52,6 +55,11 @@ const StackedBarChart = ({ data, statuses }: StackedBarChartProps) => {
       },
       y: { labelFormatter: "~s" },
     },
+    tooltip: {
+      title: (d: GetPolicyTrendsByStatusOverTimeType[number]) =>
+        dayjs(d.date).format("MMM-YYYY"),
+    },
+    animate: { enter: { type: "growInY", duration: 1000 } },
     legend: {
       color: {
         layout: {
@@ -61,6 +69,9 @@ const StackedBarChart = ({ data, statuses }: StackedBarChartProps) => {
         },
       },
     },
+    onReady: () => {
+      setLoading(false);
+    },
   };
 
   return (
@@ -69,6 +80,7 @@ const StackedBarChart = ({ data, statuses }: StackedBarChartProps) => {
       description="Compare the introduction of policies over time segmented by status"
       className="grow basis-4/6"
     >
+      {loading && <Loading />}
       <Column {...configs} />
     </ChartContainer>
   );
