@@ -7,15 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prisma:generate": "prisma generate",
-    "prisma:local:db-push": "dotenv -e .env.local -- prisma db push",
-    "prisma:local:seed": "dotenv -e .env.local -- prisma db seed",
-    "prisma:local:migrate": "dotenv -e .env.local -- prisma migrate dev",
-    "prisma:local:migrate-reset": "dotenv -e .env.local -- prisma migrate reset",
     "vercel-build": "prisma generate && prisma migrate deploy && next build"
   },
   "prisma": {
-    "seed": "dotenv -e .env.local -- tsx prisma/seed.ts"
+    "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@ant-design/charts": "^2.2.6",
@@ -26,7 +21,6 @@
     "@prisma/client": "6.1.0",
     "antd": "^5.22.6",
     "dayjs": "^1.11.13",
-    "dotenv-cli": "^8.0.0",
     "next": "14.2.21",
     "next-nprogress-bar": "^2.4.3",
     "prisma": "^6.1.0",
